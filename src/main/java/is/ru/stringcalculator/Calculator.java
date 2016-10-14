@@ -33,7 +33,9 @@ public class Calculator {
 	    	if(newNumber < 0) {
 	    		negative_numbers.add(newNumber);
 	    	}
-	    	total += newNumber;
+	    	else if (newNumber > 0 && newNumber < 1000) {
+	    		total += newNumber;
+	    	}
 		}
 
 		if (negative_numbers.size() > 0){

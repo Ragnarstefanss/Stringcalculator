@@ -41,11 +41,21 @@ public class CalculatorTest {
 
     @Test
     public void testNegativeNumbers(){
-    	assertEquals(1, Calculator.add("-1,2"));
+    	assertEquals(2, Calculator.add("-1,2"));
     }
 
-        @Test
+    @Test
     public void testTwoNegativeNumbers(){
-    	assertEquals(-4, Calculator.add("2,-4,3,-5"));
+    	assertEquals(5, Calculator.add("2,-4,3,-5"));
+    }
+
+    @Test
+    public void biggerThan1000(){
+    	assertEquals(2, Calculator.add("1000,2"));
+    }
+
+    @Test
+    public void MultipleNumbersBiggerThan1000(){
+    	assertEquals(104, Calculator.add("2,5000,2,100,1500"));
     }
 }
