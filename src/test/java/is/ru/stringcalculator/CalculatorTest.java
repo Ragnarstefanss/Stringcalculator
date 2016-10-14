@@ -38,10 +38,4 @@ public class CalculatorTest {
     public void testTwoNewLines(){
     	assertEquals(21, Calculator.add("4,5\n8\n4"));
     }
-/*
-    @Test
-    public void testMinusNumbers(){
-    	assertEquals(2, Calculator.add("-1,3"));
-    }
-*/
 }
