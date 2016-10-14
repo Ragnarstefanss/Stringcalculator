@@ -38,4 +38,14 @@ public class CalculatorTest {
     public void testTwoNewLines(){
     	assertEquals(21, Calculator.add("4,5\n8\n4"));
     }
+
+    @Test
+    public void testNegativeNumbers(){
+    	assertEquals(1, Calculator.add("-1,2"));
+    }
+
+        @Test
+    public void testTwoNegativeNumbers(){
+    	assertEquals(-4, Calculator.add("2,-4,3,-5"));
+    }
 }
